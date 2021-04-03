@@ -1,4 +1,6 @@
 <h1>Home#index</h1>
 <%@tag_data.each do |tag_name, count| %>
-  <%=tag_name %>(<%=count %>)
+  <span style='font-size: <%=count * 20%>px'>
+    <%=link_to tag_name, contents_path(tags:[tag_name]), style: 'text-decoration: none'%>
+  </span>
 <% end %>
