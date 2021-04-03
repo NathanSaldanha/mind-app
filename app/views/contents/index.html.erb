@@ -1,6 +1,8 @@
+<%=link_to "New Content", new_content_path %>
 <h1>Contents#index</h1>
 <%@contents.each do |contents| %>
   Title: <%=contents.title %> |
   Description: <%=contents.description %>
+  <%=link_to 'Edit', edit_content_path(contents) %>
   <br>
 <% end %>
