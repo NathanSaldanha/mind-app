@@ -1,5 +1,6 @@
 class ContentsController < ApplicationController
-  before_action :authenticate_user!, :set_content, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
+  before_action :set_content, only: %i[ show edit update destroy ]
   def index
     @contents = current_user.contents
   end
@@ -23,7 +24,7 @@ class ContentsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /contentS/1 or /contentS/1.json
+  # PATCH/PUT /contents/1 or /contents/1.json
   def update
     respond_to do |format|
       if @content.update(content_params)
@@ -33,6 +34,15 @@ class ContentsController < ApplicationController
         format.html { render :edit, status: :unprocessable_entity }
         format.json { render json: @content.errors, status: :unprocessable_entity }
       end
+    end
+  end
+
+  # DELETE /contents/1 or /contents/1.json
+  def destroy
+    @content.destroy
+    respond_to do |format|
+      format.html { redirect_to contents_path, notice: "Content was successfully destroyed." }
+      format.json { head :no_content }
     end
   end
 

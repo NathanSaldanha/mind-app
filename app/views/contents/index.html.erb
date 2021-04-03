@@ -4,5 +4,6 @@
   Title: <%=contents.title %> |
   Description: <%=contents.description %>
   <%=link_to 'Edit', edit_content_path(contents) %>
+  <%=link_to 'Destroy', content_path(contents), method: :delete, data: {confirm: 'Are you sure ?'}%>
   <br>
 <% end %>
