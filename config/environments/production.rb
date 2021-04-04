@@ -2,7 +2,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   #
   #Config devise
-  config.action_mailer.default_url_options = {:host => 'https://mind-app-util.herokuapp.com/'}
+  config.action_mailer.default_url_options = {:host => 'https://mind-app-util.herokuapp.com'}
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default :charset => "utf-8"
@@ -17,8 +17,8 @@ Rails.application.configure do
     domain: "herokuapp.com",
     authentication: :login,
     enable_starttls_auto: true,
-    user_name: "*",
-    password: "*"
+    user_name: "nathanmariano791@gmail.com",
+    password: "n@th@n88"
   }
   # Code is not reloaded between requests.
   config.cache_classes = true
