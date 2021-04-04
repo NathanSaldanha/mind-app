@@ -7,6 +7,7 @@ class ContentsController < ApplicationController
   end
   # GET /contentS/1 or /contentS/1.json
   def show
+    @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
   end
 
   def new
