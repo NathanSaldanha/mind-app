@@ -1,6 +1,6 @@
 # Projeto Mind Tag - README
 
-[![Build Status](https://travis-ci.org/armando-couto/bank-accounting.svg?branch=master)](https://mind-app-util.herokuapp.com/)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://mind-app-util.herokuapp.com/)
 
 ### O Mind Tag é uma ferramenta de brainstorming (tempestade de ideias) que auxilia na gestão estratégica de uma empresa ou negócio. 
 
