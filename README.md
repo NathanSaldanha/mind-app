@@ -15,8 +15,7 @@
     gem install bundler
     bundle install
     rake db:create 
-    rake db:migrate 
-    rake db:seed
+    rake db:migrate
     rails server
 
 ## Banco de dados - BD
