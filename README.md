@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/armando-couto/bank-accounting.svg?branch=master)](https://mind-app-util.herokuapp.com/)
 
-### O Mind Tag é uma ferramenta de brainstorming (tempestade de ideias); e no auxílio da gestão estratégica de uma empresa ou negócio. 
+### O Mind Tag é uma ferramenta de brainstorming (tempestade de ideias) que auxilia na gestão estratégica de uma empresa ou negócio. 
 
 ## Requisito
     Rails 6.0.3
