@@ -37,3 +37,6 @@
     Shoulda-matchers: Fornece uma linha compatível com RSpec e Minitest para testar a
     funcionalidade Rails comum que, se escrita à mão, seria muito mais longa, mais complexa
     e sujeita a erros
+
+    Heroku: É uma plataforma nuvem que faz deploy de várias aplicações back-end seja para
+    hospedagem, testes em produção ou escalar as suas aplicações.
