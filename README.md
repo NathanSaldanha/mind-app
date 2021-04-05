@@ -1,24 +1,39 @@
-# README
+# Projeto Mind Tag - README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![Build Status](https://travis-ci.org/armando-couto/bank-accounting.svg?branch=master)](https://mind-app-util.herokuapp.com/)
 
-Things you may want to cover:
+### O Mind Tag é uma ferramenta de brainstorming (tempestade de ideias); e no auxílio da gestão estratégica de uma empresa ou negócio. 
 
-* Ruby version
+## Requisito
+    Rails 6.0.3
+    Ruby 2.7.2
+    Postegresql
 
-* System dependencies
+## Setup
+    rvm install 2.7.2   
+    rvm use 2.7.2
+    gem install bundler
+    bundle install
+    rake db:create 
+    rake db:migrate 
+    rake db:seed
+    rails server
 
-* Configuration
+## Banco de dados - BD
+    Baixe e instale o PGAdmin: https://www.pgadmin.org/download/
+    Acesse a interface do postgres: http://127.0.0.1:51669/browser/
 
-* Database creation
+### Soluçõe utilizadas
+    Devise: Solução de autenticação, recuperação de senha e alteração de senha e email.
+    Flexível para Rails.
 
-* Database initialization
+    Bootstrap: Framework web para desenvolvimento de componentes de interface e front-end
+    
+    Redcarpet: Um analisador de Markdown seguro e recarregado.
 
-* How to run the test suite
+    Rspec-rails: rspec-rails traz a estrutura de teste RSpec para Ruby on Rails como uma 
+    alternativa para sua estrutura de teste padrão, Minitest.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    Shoulda-matchers: Fornece uma linha compatível com RSpec e Minitest para testar a
+    funcionalidade Rails comum que, se escrita à mão, seria muito mais longa, mais complexa
+    e sujeita a erros
